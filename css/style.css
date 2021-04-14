@@ -7,7 +7,6 @@ body{
 }
 main{
     padding: 20px ;
-    
 }
 .imagen {
     height: 10px;
@@ -18,15 +17,48 @@ main{
     margin: 10px 0;
     color: #454546;
 }
+/*******estilos del menu***************/ 
 .main-nav{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition:  all 0.5s;
+    z-index: 999;
+    width: 100%;
 }
+.menu{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    background-color: #212121;
+    width: 100%;
+    list-style: none;
+    padding: 10px;  
+}
+.menu__item{
+    text-align: center;
+}
+.menu__link{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-top: 10px;
+    height: 40px;
+}
+.menu__link:hover{
+    background-color: #ffffff;
+    color: #212121;
+}
+.mostrar{
+    opacity: 1;
+    visibility: visible;
+}
+
 .main-header__container{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;  
 }
-.icon-menu{
+ .icon-menu{
     height: 1.7em;
     border: 1px solid rgb(51, 48, 48);
     padding: 5px 7px;
@@ -128,6 +160,11 @@ main{
     text-decoration: none;
     width: 150px;
     margin: 20px auto;
+    transition: all 0.5s;
+}
+.btn-shop:hover{
+    background-color: #ff4e00;
+    color: #ffffff;
 }
 
 /**********************************************************/
@@ -151,8 +188,7 @@ main{
     height: 15px;
     top: 5px;
     right: 0;
-    color: rgb(255, 255, 255);
-    
+    color: rgb(255, 255, 255);  
 }
 .producto__price{
     color: #ff4e00;
@@ -163,6 +199,7 @@ main{
     height:15px;
     margin: 0 auto;
     margin-top: 12px;
+    cursor: pointer;
 }
 .product__img{
     width: 10em;  
@@ -237,6 +274,9 @@ main{
 .tip .btn-shop{
     color: #333;
 }
+.tip .btn-shop:hover{
+    color: rgb(255, 255, 255);
+}
 .main-footer{
     background-color: #151515;
     color: #ffffff;
@@ -267,3 +307,77 @@ main{
 .copy{
     color: #555;
 }
+
+
+
+
+/************************* estilos para tablest*************************/
+
+@media screen and (min-width: 740px){
+    .slider{
+        height: 400px;   
+    }
+    .editor__item{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .container{
+        width: 1000px;
+        margin: auto;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .main-header .container--flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-header__container{
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .main-header__input{
+        
+    }
+    .main-header__container:nth-child(2){
+        order: -1;
+        width: 20%;
+    }
+    .main-header__container:nth-child(3){
+        width: 20%;
+    }
+    .main-header__title{
+        width: 100%;
+        font-size: 4em;
+        margin: 0%;
+        border-bottom: 1px solid #ccc;
+    }
+    .main-nav{
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+    }
+    .menu{
+        position: static;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background: none;
+    }
+    .menu__link{
+        color: #333;
+       padding-left: 15px;
+       padding-right: 15px;
+       
+    }
+    .menu__link:hover{
+        background-color: #333;
+        color: #ffffff;
+    }
+}
+
+
+

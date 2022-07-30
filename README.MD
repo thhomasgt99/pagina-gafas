@@ -1,4 +1,4 @@
-# `Glasses Shop` erda
+# `Glasses Shop`
 ---
 ### `Descripción`
 - Glasses Shop es un layout para una tienda virtual.

@@ -93,7 +93,7 @@ main{
 .container-slider{
     
     margin: 40px 20px;
-    overflow: hidden;/*oculta las otras imagenes que estan en seguida*/
+    overflow: hidden;
     position: relative;
 }
 .slider{
@@ -120,7 +120,7 @@ main{
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;/*las imagenes no se estiraran*/
+    object-fit: cover;
 }
 .slider__btn{
     z-index: 99;
@@ -130,7 +130,7 @@ main{
     height: 40px;
     background-color: rgba(255, 255, 255, 0.2);
     top: 50%;
-    transform: translateY(-50%);/*locentra mejor*/
+    transform: translateY(-50%);
     font-size: 30px;
     font-weight: bold;
     font-family: monospace;
@@ -187,7 +187,7 @@ main{
     position: relative;
 }
 .product:before{
-    content: 'NEW';/*agrega strings desde css*/
+    content: 'NEW';
     position: absolute;
     background-color: #ff4e00;
     padding: 5px ;
@@ -313,7 +313,7 @@ main{
 .copy{
     color: #555;
 }
-/************************* estilos para tablest*************************/
+/************************* estilos para tablet*************************/
 @media screen and (min-width: 440px){
     .container-slider {
         max-width: 1200px;

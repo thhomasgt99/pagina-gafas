@@ -1,5 +1,15 @@
-# `GAFAS`
+# `Glasses Shop`
 ---
-#### *Maqueta single-page cencilla con diseño escalable.*
-- En este proyecto no se instalaron dependencias o se utilizaron archivos de configuracion.
-- Tanto para html, css y js se utilizo codigo 'vanilla' incluyendo el slider.
+### `Descripción`
+- Glasses Shop es un layout para una tienda virtual.
+- Contiene un *slider* horizontal hecho con JavaScript *vanilla* para presentar algunas imágenes de los productos.
+---
+
+### `Tecnologías`
+- HTML
+- CSS
+- JavaScript
+---
+
+### `URL del proyecto`
+- [Glasses Shop](https://thhomasgt99.github.io/pagina-gafass/)
